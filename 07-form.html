@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Form Basic</title>
+
+
+      <style>
+         td {
+            padding: 10px;
+         }
+         td.label {
+            width: 25%;
+            text-align: right;
+            font-weight: bold;
+         }
+         /* td{
+            padding: 8px;
+        }
+        td.label{
+            width: 25%;
+            text-align: right;
+            font-weight: bold;
+        }  */
+         /* input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="select"]{
+            width: 50%;
+        }
+        select{
+            width: 50%;
+        }
+        textarea{
+            width: 50%;
+        } */
+      </style>
+   </head>
+   <body>
+      <h2>Materi Form</h2>
+
+
+      <form>
+         <label>Nama :</label>
+         <input type="text" name="nama" />
+         <br />
+         <br />
+         <label>Email :</label>
+         <input name="email" />
+         <br />
+         <br />
+         <label>Password :</label>
+         <input type="password" name="password" />
+         <br />
+         <br />
+         <label>Jenis Kelamin :</label>
+         <input type="radio" name="jk" value="L" />Laki-laki <input type="radio" name="jk" value="P" />Perempuan
+         <br />
+         <br />
+         <label>Tanggal Lahir :</label>
+         <input type="date" name="tanggal_lahir" />
+         <br />
+         <br />
+         <label>Umur :</label>
+         <input type="number" name="umur" />
+         <br />
+         <br />
+         <label>Alamat :</label>
+         <textarea name="alamat" rows="5" cols="33"></textarea>
+         <br />
+         <br />
+         <label>Pendidikan :</label>
+         <select name="pendidikan">
+            <option></option>
+            <option value="S3">S3</option>
+            <option value="S2">S2</option>
+            <option value="D4/S1">D4/S1</option>
+            <option value="Diploma">Diploma</option>
+            <option value="SMA/MK">SMA/SMK</option>
+            <option value="SMP">SMP</option>
+            <option value="SD">SD</option>
+         </select>
+         <br />
+         <br />
+         <label>Hobi :</label>
+         <input type="checkbox" name="hobi" value="Olahraga" />Olahraga <input type="checkbox" name="hobi" value="Membaca" />Membaca <input type="checkbox" name="hobi" value="Ngoding" />Ngoding
+         <br />
+         <br />
+         <label>Upload Foto :</label>
+         <input type="file" name="foto" />
+         <br />
+         <br />
+         <input type="submit" value="Submit" />
+         <input type="reset" value="Reset" />
+         <br />
+         <br />
+      </form>
+
+
+      <br />
+      <hr />
+      <br />
+
+
+      <h1 style="text-align: center">Form Data 1</h1>
+
+
+      <form>
+         <table border="1px solid black" width="50%" style="border-collapse: collapse; margin: 0 auto">
+            <tr>
+               <td class="label">Nama :</td>
+               <td><input type="text" name="nama" /></td>
+            </tr>
+            <tr>
+               <td class="label">Email :</td>
+               <td><input type="email" name="email" /></td>
+            </tr>
+            <tr>
+               <td class="label">Password :</td>
+               <td><input type="password" name="password" /></td>
+            </tr>
+            <tr>
+               <td class="label">Jenis Kelamin :</td>
+               <td><input type="radio" name="jk" value="L" />Laki-laki <input type="radio" name="jk" value="P" />Perempuan</td>
+            </tr>
+            <tr>
+               <td class="label">Tanggal Lahir :</td>
+               <td><input type="date" /></td>
+            </tr>
+         </table>
+      </form>
+
+
+      <br />
+      <hr />
+      <br />
+
+
+      <h1 style="text-align: center">Form Data 2</h1>
+
+
+      <form>
+         <table border="1px solid" width="50%" style="border-collapse: collapse; margin: 0 auto">
+            <tr>
+               <td class="label">Nama :</td>
+               <td class="input"><input type="text" name="nama" /></td>
+            </tr>
+            <tr>
+               <td class="label">Email :</td>
+               <td class="input"><input type="email" name="email" /></td>
+            </tr>
+            <tr>
+               <td class="label">Password :</td>
+               <td class="input"><input type="password" name="password" /></td>
+            </tr>
+            <tr>
+               <td class="label">Jenis Kelamin :</td>
+               <td class="input"><input type="radio" name="laki-laki" value="Laki-laki" /> Laki-laki <input type="radio" name="perempuan" value="Perempuan" /> Perempuan</td>
+            </tr>
+            <tr>
+               <td class="label">Tanggal Lahir :</td>
+               <td class="input"><input type="date" name="tanggal_lahir" /></td>
+            </tr>
+            <tr>
+               <td class="label">Umur :</td>
+               <td class="input"><input type="number" name="umur" /></td>
+            </tr>
+            <tr>
+               <td class="label">Alamat :</td>
+               <td class="textarea"><textarea name="alamat" rows="5" cols="33"></textarea></td>
+            </tr>
+            <tr>
+               <td class="label">Pendidikan :</td>
+               <td>
+                  <select name="pendidikan">
+                     <option></option>
+                     <option value="S3">S3</option>
+                     <option value="S2">S2</option>
+                     <option value="D4/S1">D4/S1</option>
+                     <option value="Diploma">Diploma</option>
+                     <option value="SMA/MK">SMA/SMK</option>
+                     <option value="SMP">SMP</option>
+                     <option value="SD">SD</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td class="label">Hobi :</td>
+               <td><input type="checkbox" name="hobi" value="Olahraga" />Olahraga <input type="checkbox" name="hobi" value="Membaca" />Membaca <input type="checkbox" name="hobi" value="Ngoding" />Ngoding</td>
+            </tr>
+            <tr>
+               <td colspan="2" style="text-align: center">
+                  <input type="submit" value="Simpan" />
+                  <input type="reset" value="Reset" />
+               </td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>
